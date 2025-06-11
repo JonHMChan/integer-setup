@@ -1,3 +1,5 @@
+![AI Second Brain](header.png)
+
 # AI Second Brain
 
 A personal Markdown-based journal project designed for daily writing, reflection, and continuous documentation with AI assistance. This project serves as a "second brain" that captures thoughts, insights, and experiences while building long-term memory through structured journaling.
