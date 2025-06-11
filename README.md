@@ -46,28 +46,35 @@ Each journal entry follows a structured format:
 
 ## Usage
 
-### Creating Journal Entries
+This project is designed to work primarily through **Claude Code**, Anthropic's AI coding assistant. The journaling experience is interactive and AI-guided.
 
-Create a new journal entry for today:
+### Starting a Journaling Session
 
-```bash
-touch journal/$(date '+%Y-%m-%d').md
-```
+1. Open Claude Code in this project directory
+2. The AI will automatically:
+   - Check for today's journal entry
+   - Create one if it doesn't exist
+   - Begin a natural conversation to help you reflect and write
 
-List all journal entries:
-
-```bash
-ls journal/
-```
-
-### AI-Assisted Journaling
-
-The project includes `CLAUDE.md` which provides instructions for AI assistance:
+### AI-Assisted Features
 
 - **Session Initialization**: Automatically checks for today's entry
-- **Continuous Workflow**: Updates entries during conversations
+- **Continuous Workflow**: Updates entries during conversations  
 - **Personal Context**: Maintains long-term memory between sessions
 - **Natural Conversation**: Focused, one-question-at-a-time approach
+- **Automatic Commits**: Saves progress at natural conversation breaks
+
+### Manual Commands (Optional)
+
+If you prefer manual file management:
+
+```bash
+# Create a new journal entry for today
+touch journal/$(date '+%Y-%m-%d').md
+
+# List all journal entries
+ls journal/
+```
 
 ## Workflow
 
@@ -87,9 +94,32 @@ The project includes `CLAUDE.md` which provides instructions for AI assistance:
 
 ## Getting Started
 
-1. Clone or download this repository
-2. Start a conversation with Claude Code in this directory
-3. The AI will automatically initialize today's journal entry
-4. Begin writing and reflecting with AI assistance
+### Prerequisites
+
+- **Claude Code**: Download from [claude.ai/code](https://claude.ai/code)
+- **Git**: For version control (optional but recommended)
+
+### Setup
+
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/yourusername/ai-second-brain.git
+   cd ai-second-brain
+   ```
+
+2. **Start Claude Code** in the project directory:
+   ```bash
+   claude-code
+   ```
+
+3. **Begin journaling**: Claude will automatically initialize today's journal entry and start a conversation to help you reflect and write.
+
+### First Session
+
+When you first start Claude Code in this directory:
+- It will check for today's journal entry (`journal/YYYY-MM-DD.md`)
+- Create the file if it doesn't exist
+- Begin asking thoughtful questions to help you capture your day
+- Update the journal in real-time as you share thoughts and experiences
 
 This project transforms daily journaling from a solitary activity into an interactive, AI-enhanced experience that builds your personal knowledge base over time.
