@@ -2,6 +2,36 @@
 
 A personal Markdown-based journal project designed for daily writing, reflection, and continuous documentation with AI assistance. This project serves as a "second brain" that captures thoughts, insights, and experiences while building long-term memory through structured journaling.
 
+## Getting Started
+
+### Prerequisites
+
+- **Claude Code**: Download from [claude.ai/code](https://claude.ai/code)
+- **Git**: For version control (optional but recommended)
+
+### Setup
+
+1. **Clone this repository**:
+   ```bash
+   git clone https://github.com/yourusername/ai-second-brain.git
+   cd ai-second-brain
+   ```
+
+2. **Start Claude Code** in the project directory:
+   ```bash
+   claude-code
+   ```
+
+3. **Begin journaling**: Claude will automatically initialize today's journal entry and start a conversation to help you reflect and write.
+
+### First Session
+
+When you first start Claude Code in this directory:
+- It will check for today's journal entry (`journal/YYYY-MM-DD.md`)
+- Create the file if it doesn't exist
+- Begin asking thoughtful questions to help you capture your day
+- Update the journal in real-time as you share thoughts and experiences
+
 ## Overview
 
 This project combines the simplicity of Markdown with the power of AI-assisted journaling. Daily entries are stored as dated files with a consistent structure, allowing for easy reflection and pattern recognition over time.
@@ -91,35 +121,5 @@ ls journal/
 - **Memory**: Long-term context preservation across sessions
 - **Simplicity**: Plain Markdown files, easy to read and backup
 - **Flexibility**: Adaptable structure for different types of content
-
-## Getting Started
-
-### Prerequisites
-
-- **Claude Code**: Download from [claude.ai/code](https://claude.ai/code)
-- **Git**: For version control (optional but recommended)
-
-### Setup
-
-1. **Clone this repository**:
-   ```bash
-   git clone https://github.com/yourusername/ai-second-brain.git
-   cd ai-second-brain
-   ```
-
-2. **Start Claude Code** in the project directory:
-   ```bash
-   claude-code
-   ```
-
-3. **Begin journaling**: Claude will automatically initialize today's journal entry and start a conversation to help you reflect and write.
-
-### First Session
-
-When you first start Claude Code in this directory:
-- It will check for today's journal entry (`journal/YYYY-MM-DD.md`)
-- Create the file if it doesn't exist
-- Begin asking thoughtful questions to help you capture your day
-- Update the journal in real-time as you share thoughts and experiences
 
 This project transforms daily journaling from a solitary activity into an interactive, AI-enhanced experience that builds your personal knowledge base over time.
