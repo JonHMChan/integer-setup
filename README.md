@@ -117,13 +117,25 @@ Claude can analyze across all your notes to:
 - Surface forgotten connections and ideas
 - Create comprehensive analysis from your knowledge base
 
-### 5. Templates & Consistency
-Add `template.md` and `README.md` files in folders for:
-- Consistent formatting across content types
-- Self-documenting workflows
-- Easy onboarding for new areas
+### 5. Self-Documenting Structure
+This system uses a folder-specific documentation pattern:
 
-**Note**: The `journal/README.md` contains the standard journal entry template and formatting guidelines.
+**README.md in each folder**:
+- Contains specific instructions for that content type
+- Documents expected formats and naming conventions
+- Provides usage guidelines and workflows
+- Example: `journal/README.md` contains journal entry template and guidelines
+
+**template.md files** (optional):
+- Provide copy-paste templates for new content
+- Ensure consistency across similar items
+- Speed up content creation
+
+**Benefits**:
+- Each folder is self-explaining
+- Claude automatically reads folder READMEs before working with content
+- System remains organized as it grows
+- Easy onboarding for new content types
 
 
 ## AI Integration
@@ -146,6 +158,7 @@ Claude Code serves as your **intelligent layer** across all content. As you expa
 ### Expansion Strategy
 **Start Simple**: Use just the journal for daily reflection
 **Add Gradually**: When you find yourself needing task management, add `tasks.md`
+**Document as You Go**: Create README.md files in new folders to document their purpose and format
 **Grow Organically**: Let your actual usage patterns guide what folders to create
 **Stay Minimal**: Only add structure when it provides clear value
 
@@ -193,8 +206,11 @@ Advanced users have evolved this into a complete **Personal Operating System** t
 ### Q: Can multiple people use the same system?
 **A**: Each person should have their own repository since it's designed for personal knowledge management. However, you could share specific folders or notes for collaboration.
 
+### Q: How do I know what format to use for different folders?
+**A**: Each folder can contain its own README.md with specific instructions. For example, `journal/README.md` explains the journal entry format. Claude automatically reads these folder-specific guides before working with content.
+
 ### Q: What if I want to change the structure later?
-**A**: Everything is just Markdown files! You can reorganize, rename, or restructure anytime. Git history preserves your changes, and Claude adapts to your new organization.
+**A**: Everything is just Markdown files! You can reorganize, rename, or restructure anytime. Git history preserves your changes, and Claude adapts to your new organization. Just update the relevant README files in each folder.
 
 ## Core Benefits
 
