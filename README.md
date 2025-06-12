@@ -26,6 +26,13 @@ A comprehensive Personal Operating System built on Markdown and powered by AI. W
 
 3. **Begin journaling**: Claude will automatically initialize today's journal entry and start a conversation to help you reflect and write.
 
+### Your First Session
+
+When you start Claude Code in this directory:
+- It checks for today's journal entry (`journal/YYYY-MM-DD.md`)
+- Creates the file if it doesn't exist
+- Begins natural conversation to help you reflect and write
+- Updates the journal in real-time as you share thoughts
 
 ## Core Philosophy
 
@@ -129,24 +136,6 @@ Add `template.md` and `README.md` files in folders for:
 - Self-documenting workflows
 - Easy onboarding for new areas
 
-## Getting Started
-
-### Prerequisites
-- **Claude Code**: Download from [claude.ai/code](https://claude.ai/code)
-- **Git**: For version control (optional but recommended)
-
-### Basic Setup
-1. Clone this repository
-2. Start Claude Code in the directory
-3. Begin with daily journaling
-4. Add files/folders only when you need them
-
-### Your First Session
-When you start Claude Code:
-- It checks for today's journal entry (`journal/YYYY-MM-DD.md`)
-- Creates the file if it doesn't exist
-- Begins natural conversation to help you reflect and write
-- Updates the journal in real-time as you share thoughts
 
 ## AI Integration
 
@@ -191,6 +180,32 @@ Advanced users have evolved this into a complete **Personal Operating System** t
 - Product development pipeline
 - Creative thinking partner
 - Accountability and reflection tool
+
+## Frequently Asked Questions
+
+### Q: Do I need to create all the folders mentioned in the documentation?
+**A**: No! Start with just the journal folder. Only add additional folders (tasks.md, goals.md, people/, notes/) when you actually need them. The system grows with your usage.
+
+### Q: What if I miss a day of journaling?
+**A**: No problem! Just pick up where you left off. Claude will create the entry for any date you want to work on. The system is flexible and non-judgmental.
+
+### Q: Can I use this without Claude Code?
+**A**: While designed for Claude Code, all files are standard Markdown so you can edit them with any text editor. You'll miss the AI integration features, but the structure still works for manual journaling.
+
+### Q: How do I backup my data?
+**A**: Since everything is in Git, your entire system is automatically backed up. You can also sync to GitHub, GitLab, or any other Git hosting service for additional redundancy.
+
+### Q: What's the difference between this and other note-taking apps?
+**A**: This system provides unified, AI-assisted knowledge management across all life domains in portable Markdown files. No vendor lock-in, infinite customization, and one AI assistant that knows your entire context.
+
+### Q: How do I handle sensitive information?
+**A**: You control all the data. Keep sensitive notes in private repositories or local-only folders. The system works entirely with files you own and control.
+
+### Q: Can multiple people use the same system?
+**A**: Each person should have their own repository since it's designed for personal knowledge management. However, you could share specific folders or notes for collaboration.
+
+### Q: What if I want to change the structure later?
+**A**: Everything is just Markdown files! You can reorganize, rename, or restructure anytime. Git history preserves your changes, and Claude adapts to your new organization.
 
 ## Core Benefits
 
