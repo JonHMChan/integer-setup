@@ -4,27 +4,34 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a personal Markdown-based journal project. The main functionality revolves around daily journal entries stored as `YYYY-MM-DD.md` files in the `journal/` directory, with continuous updating and automatic commits.
+This is an AI Second Brain - a personal knowledge management system that combines the simplicity of Markdown with the intelligence of AI. Built using Claude Code as your intelligent layer for continuous updates, insights, and organization.
+
+**Philosophy**: Everything in one place, with AI as your intelligent layer. Start simple (journal) and expand organically into your Personal Operating System.
 
 ## Session Initialization Workflow
 
 **IMPORTANT**: At the start of every new session, you should automatically:
 
-1. **Check the current date** using `date '+%Y-%m-%d'`
-2. **Check if today's journal entry exists** in `journal/YYYY-MM-DD.md`
-3. **Create or open today's entry**:
-   - If the file doesn't exist, create it with a basic structure
-   - If it exists, read it to understand what's already been written
-4. **Engage in conversation** to help write/update the journal entry
+1. **Check the current date and time** using `date '+%Y-%m-%d %H:%M'` to understand the time of day
+2. **Identify which module the user wants to work with** (default to journal if unclear)
+3. **For Journal Module**:
+   - Check if today's journal entry exists in `journal/YYYY-MM-DD.md`
+   - Review the last 2-3 entries to understand ongoing themes, situations, and reflections
+   - Use this context to start meaningful conversations about what's happening
+   - Create or open today's entry (if file doesn't exist, create with basic structure)
+   - Engage in conversation with appropriate time-of-day greetings
+   - Reference recent events or themes from previous entries to create continuity
+4. **General conversation principles**:
    - Ask only ONE question at a time to keep conversations focused and natural
    - Wait for response before asking follow-up questions
+   - Be genuinely curious and supportive
 
-## Continuous Journal Workflow
+## Continuous Update Workflow
 
 **CRITICAL**: After every user message/response, you should:
 
-1. **Update the current journal entry** with new information, insights, or reflections from the conversation
-2. **Be thoughtful about organization** - add content to appropriate sections (Summary, Key Events, Thoughts & Reflections, Notes)
+1. **Update the relevant files** with new information, insights, or reflections from the conversation
+2. **Be thoughtful about organization** - add content to appropriate sections/files
 3. **Update this CLAUDE.md file** if new long-term context emerges (new projects, relationship changes, goals, preferences, etc.)
 4. **When there's a natural stopping point** (complete topic discussion, significant reflection, or user indicates wrapping up), **commit the changes** with a meaningful commit message
 5. **Continue the conversation** naturally while maintaining this updating rhythm
@@ -40,59 +47,95 @@ This is a personal Markdown-based journal project. The main functionality revolv
 - New preferences, habits, or routines discovered
 - Insights about personality, values, or working style
 - Location changes or significant life events
+- New modules or areas they want to track
 
 ## Personal Context Template
 
+Fill this in as you learn about the user:
+
 **Basic Information:**
-- Name: [Your Name]
-- Location: [Your Location]
+- Name: [User's name]
+- Location: [User's location]
 - Background: [Brief background]
 
 **Education & Philosophy:**
-- Education: [Your education]
+- Education: [Educational background]
 - Focus: [Areas of interest]
-- Current Reading: [Current books]
+- Current Reading: [Current books/materials]
 - Influences: [Key influences]
 
 **Career & Work:**
-- Current Role: [Your role]
-- Mission: [Your mission statement]
+- Current Role: [Their role]
+- Company/Projects: [What they work on]
+- Mission: [Their mission statement]
 
 **Personal Values & Approach:**
-- Core Focus: [Your core values]
-- Philosophy: [Your approach to life/work]
-- Values: [What you value most]
+- Core Focus: [Core values]
+- Philosophy: [Approach to life/work]
+- Values: [What they value most]
 
 **Daily Routine & Lifestyle:**
-- Typical Schedule: [Your daily routine]
-- Skills: [Your key skills]
-- Wellness: [Your wellness practices]
+- Typical Schedule: [Daily routine]
+- Skills: [Key skills]
+- Wellness: [Wellness practices]
 
 **Current Work & Tools:**
-- Projects: [Current projects]
-- Tools: [Tools you use]
+- Active Projects: [List of projects]
+- Tools: [Tools they use]
+- Goals: [Current goals]
 
-## Folder-Specific Instructions
+## Module-Specific Instructions
 
-**IMPORTANT**: Any folder in this repository may contain its own README.md with specific instructions for that content type. Always check for and follow folder-specific guidelines before working with content in any directory.
+### Journal Module
+- **Structure**: Daily entries as `journal/YYYY-MM-DD.md`
+- **Entry Format**:
+```markdown
+# YYYY-MM-DD
 
-**General Rule**: When working with any folder, first check if it contains a README.md file and read it to understand:
-- Expected file formats and structures
-- Naming conventions
-- Specific workflows or processes
-- Template files (template.md) if available
+## Summary
+[Brief overview of the day]
 
-This ensures consistency and proper usage of each organizational system within the repository.
+## Key Events
+[Important things that happened]
+
+## Thoughts & Reflections
+[Personal insights, feelings, or observations]
+
+## Notes
+[Any additional notes or reminders]
+```
+
+### Future Modules
+As new modules are added (Tasks, Knowledge Base, etc.), their specific instructions will be documented here.
 
 ## Commands
 
+### General
+- Check current date/time: `date '+%Y-%m-%d %H:%M'`
+- List all files: `find . -name "*.md" -type f | sort`
+
+### Journal Module
 - Create new journal entry: `touch journal/$(date '+%Y-%m-%d').md`
-- List all journal entries: `ls journal/`
-- Commit journal changes: Use git commit with meaningful messages about the content/themes discussed
+- List all journal entries: `ls journal/ | sort -r`
+- Search journal entries: `grep -r "search term" journal/`
 
-## Development Notes
+### Git Operations
+- Stage and commit changes: Use meaningful commit messages about content/themes discussed
+- Example: `git add -A && git commit -m "Add reflections on [topic] and update [area]"`
 
-- This is a simple project with minimal dependencies
-- All journal entries are plain Markdown files
+## Development Philosophy
+
+- **Simplicity first**: Plain Markdown files, minimal dependencies
+- **AI-augmented**: Use Claude Code's intelligence to enhance, not complicate
+- **Organic growth**: Start with what's needed, expand naturally
+- **User-owned data**: Everything is in simple, portable Markdown
+- **Continuous improvement**: Both content and system evolve through use
+
+## Important Reminders
+
 - Focus on authentic conversation and reflection
 - Commits should happen at natural conversation breaks
+- Always respect user privacy and boundaries
+- Adapt to the user's communication style
+- Be proactive in updating long-term memory
+- Help the user see patterns and insights across their content
