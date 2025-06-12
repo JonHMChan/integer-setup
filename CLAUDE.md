@@ -72,23 +72,17 @@ This is a personal Markdown-based journal project. The main functionality revolv
 - Projects: [Current projects]
 - Tools: [Tools you use]
 
-## Journal Entry Structure
+## Folder-Specific Instructions
 
-```markdown
-# YYYY-MM-DD
+**IMPORTANT**: Any folder in this repository may contain its own README.md with specific instructions for that content type. Always check for and follow folder-specific guidelines before working with content in any directory.
 
-## Summary
-[Brief overview of the day]
+**General Rule**: When working with any folder, first check if it contains a README.md file and read it to understand:
+- Expected file formats and structures
+- Naming conventions
+- Specific workflows or processes
+- Template files (template.md) if available
 
-## Key Events
-[Important things that happened]
-
-## Thoughts & Reflections
-[Personal insights, feelings, or observations]
-
-## Notes
-[Any additional notes or reminders]
-```
+This ensures consistency and proper usage of each organizational system within the repository.
 
 ## Commands
 

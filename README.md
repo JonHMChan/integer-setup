@@ -55,6 +55,7 @@ This system operates on a simple but powerful principle: **everything in one pla
 ```
 ai-second-brain/
 ├── journal/           # Daily journal entries (YYYY-MM-DD.md)
+│   └── README.md      # Journal format and usage guide
 ├── CLAUDE.md         # AI assistant instructions and personal context
 └── README.md         # This file
 ```
@@ -63,6 +64,7 @@ ai-second-brain/
 ```
 ai-second-brain/
 ├── journal/           # Daily journal entries (YYYY-MM-DD.md)
+│   └── README.md      # Journal format and usage guide
 ├── tasks.md          # Kanban-style task management (optional)
 ├── goals.md          # Multi-timeframe goal hierarchy (optional)
 ├── people/           # Personal CRM and relationship management (optional)
@@ -76,26 +78,6 @@ ai-second-brain/
 ```
 
 **Key Principle**: Only add folders/files when you actually need them. The system grows with your usage.
-
-## Journal Entry Format
-
-Each journal entry follows a structured format:
-
-```markdown
-# YYYY-MM-DD
-
-## Summary
-[Brief overview of the day]
-
-## Key Events
-[Important things that happened]
-
-## Thoughts & Reflections
-[Personal insights, feelings, or observations]
-
-## Notes
-[Any additional notes or reminders]
-```
 
 ## Advanced Use Cases
 
@@ -140,6 +122,8 @@ Add `template.md` and `README.md` files in folders for:
 - Consistent formatting across content types
 - Self-documenting workflows
 - Easy onboarding for new areas
+
+**Note**: The `journal/README.md` contains the standard journal entry template and formatting guidelines.
 
 
 ## AI Integration
