@@ -8,23 +8,28 @@ A comprehensive Personal Operating System built on Markdown and powered by AI. W
 
 ### Prerequisites
 
-- **Claude Code**: Download from [claude.ai/code](https://claude.ai/code)
+- **Node.js and npm**: Required for Claude Code installation
 - **Git**: For version control (optional but recommended)
 
 ### Setup
 
-1. **Clone this repository**:
+1. **Install Claude Code globally**:
+   ```bash
+   npm install -g @anthropic-ai/claude-code
+   ```
+
+2. **Clone this repository**:
    ```bash
    git clone https://github.com/yourusername/ai-second-brain.git
    cd ai-second-brain
    ```
 
-2. **Start Claude Code** in the project directory:
+3. **Start Claude Code** in the project directory:
    ```bash
-   claude-code
+   claude
    ```
 
-3. **Begin journaling**: Claude will automatically initialize today's journal entry and start a conversation to help you reflect and write.
+4. **Begin journaling**: Claude will automatically initialize today's journal entry and start a conversation to help you reflect and write.
 
 ### Your First Session
 
