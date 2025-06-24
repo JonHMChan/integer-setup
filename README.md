@@ -1,6 +1,4 @@
-![AI Second Brain](header.png)
-
-# Integer
+# [Integer](https://integer.app/)
 
 An AI cofounder built on Markdown and powered by AI. While it starts as a simple journal, this system can evolve into a unified knowledge management platform for life management, product development, relationship tracking, task management, and continuous learning. All stored as simple, portable Markdown files with Claude Code as your intelligent layer.
 
