@@ -18,8 +18,8 @@ An AI cofounder built on Markdown and powered by AI. While it starts as a simple
 
 2. **Clone this repository**:
    ```bash
-   git clone https://github.com/yourusername/ai-second-brain.git
-   cd ai-second-brain
+   git clone https://github.com/JonHMChan/integer-setup.git
+   cd integer-setup
    ```
 
 3. **Start Claude Code** in the project directory:
