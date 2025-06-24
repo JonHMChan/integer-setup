@@ -1,8 +1,8 @@
 ![AI Second Brain](header.png)
 
-# AI Second Brain
+# Integer
 
-A comprehensive Personal Operating System built on Markdown and powered by AI. While it starts as a simple journal, this system can evolve into a unified knowledge management platform for life management, product development, relationship tracking, task management, and continuous learning. All stored as simple, portable Markdown files with Claude Code as your intelligent layer.
+An AI cofounder built on Markdown and powered by AI. While it starts as a simple journal, this system can evolve into a unified knowledge management platform for life management, product development, relationship tracking, task management, and continuous learning. All stored as simple, portable Markdown files with Claude Code as your intelligent layer.
 
 ## Getting Started
 
