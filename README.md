@@ -51,7 +51,7 @@ This system operates on a simple but powerful principle: **everything in one pla
 
 ### Current Minimal Structure
 ```
-ai-second-brain/
+integer-setup/
 ├── journal/           # Daily journal entries (YYYY-MM-DD.md)
 │   └── README.md      # Journal format and usage guide
 ├── CLAUDE.md         # AI assistant instructions and personal context
@@ -60,7 +60,7 @@ ai-second-brain/
 
 ### Possible Expansion (Add as Needed)
 ```
-ai-second-brain/
+integer-setup/
 ├── journal/           # Daily journal entries (YYYY-MM-DD.md)
 │   └── README.md      # Journal format and usage guide
 ├── tasks.md          # Kanban-style task management (optional)
