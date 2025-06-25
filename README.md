@@ -7,6 +7,7 @@ An AI cofounder built on Markdown and powered by AI. While it starts as a simple
 ### Prerequisites
 
 - **Node.js and npm**: Required for Claude Code installation
+- **[Claude Pro Subscription](https://www.anthropic.com/pricing)**: You can also use an [API key](https://www.anthropic.com/api)
 - **Git**: For version control (optional but recommended)
 
 ### Setup
